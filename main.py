@@ -68,7 +68,7 @@ if __name__ in "__main__":
     count = int(input("Type count:"))
     threads_limit = int(input("Count thread:"))
     threads_limit += threading.active_count()
-    for i in range(count):
+    for i in range(int(count)):
         while threading.active_count() >= threads_limit:
             pass
         main()
